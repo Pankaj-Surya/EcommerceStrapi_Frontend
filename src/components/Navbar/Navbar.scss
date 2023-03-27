@@ -1,0 +1,118 @@
+.navbar{
+  height: 60px;
+  //background-color: rgb(188, 226, 118); 
+  // 
+
+
+  width: 100vw;  
+  .wrapper{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .link{
+      color: inherit;
+      text-decoration: none;
+     }
+
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    
+    }
+
+    .left{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      
+        .catDropDown{
+          display: none;
+        }
+    }
+    .center{
+        font-style: 30px;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+    }
+    .right{
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      padding-right: 22px;
+    }
+
+    .icons{
+        display: flex;
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+
+        .cartIcon{
+            position: relative;
+
+            span{
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                color:white;
+                background-color: #2879fe;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+  }
+}
+
+
+@media screen and (930px<width<1064px) {
+   .navbar{
+    font-size: medium !important;
+   }
+   .navbar .wrapper .item{
+    font-size: medium !important;
+   }
+ 
+   .item{
+    font-size: medium !important;
+   }
+
+   .item .hideCat{
+    display: none;
+   }
+   .left  .catDropDown{
+    display: inline-block;
+  }
+  .left > .hideIcon{
+    background-color: red;
+    display: none !important;
+  }
+}
+
+
+// @media screen and (600px<width<930px) {
+//   .navbar{
+//    font-size: small !important;
+//   }
+//   .navbar .wrapper .item{
+//    font-size: small !important;
+//   }
+
+//   .item{
+//    font-size: small !important;
+//   }
+//   .hideIcon{
+//    background-color: red;
+//    display: none !important;
+//  }
+// }
+
+
